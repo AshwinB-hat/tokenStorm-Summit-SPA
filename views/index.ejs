@@ -2,21 +2,27 @@
 <html>
 <head>
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="index_display.js"></script>
 
 
 </head>
 
 <body >
 	
-	<div class="topDisplay">
+	<div class="topDisplay" id="header">
 		<nav class="navbar navbar-trans navbar-expand-md  fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a href="#" class="navbar-left"><img src="https://secure.meetupstatic.com/photos/event/d/8/a/8/600_463915464.jpeg"></a>
+					<a href="#header" class="navbar-left"><img src="https://secure.meetupstatic.com/photos/event/d/8/a/8/600_463915464.jpeg"></a>
 				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			    <span class="navbar-toggler-icon"></span>
@@ -26,14 +32,12 @@
 				  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 				    <ul class="navbar-nav ml-auto">
 				      <li class="nav-item">
+				        <a class="nav-link" href="#speakers">Top Stories</a>
+				      </li>
+				      <li class="nav-item">
 				        <a class="nav-link" href="#">Speakers</a>
 				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Agenda</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Venue</a>
-				      </li> 
+				      
 				    </ul>
 				  </div> 
 				</div>
@@ -77,8 +81,8 @@
 		</div>
 
 	</div>
-	<div class="speakers">
-		<div class="container">
+	<div class="speakers" >
+		<div class="container" id = "speakers">
 		<h1>Speakers for the Event!</h1>
 		<div></div>
 		</div>

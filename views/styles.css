@@ -60,8 +60,31 @@ ul{
   vertical-align:middle;
 }
 
-.navbar-nav{
-	background:rgba(0, 0, 0, 0.5);
+.nav_background{
+	 background:rgba(255, 0, 0, 0.8); 
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 14.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 14.1 */
+            animation: fadein 4s;
+}
+
+
+@keyframes fadein {
+    from { background:rgba(255, 0, 0, 0.1); }
+    to   { background:rgba(255, 0, 0, 0.8); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { background:rgba(255, 0, 0, 0.1); }
+    to   { background:rgba(255, 0, 0, 0.8); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { background:rgba(255, 0, 0, 0.1); }
+    to   { background:rgba(255, 0, 0, 0.8); }
 }
 
 .vertical-center {
@@ -99,4 +122,10 @@ h1{
 	background-size: cover;
 	height:40em;
 	color:white;
+}
+
+.nav-link{
+	font-size:30px;
+	font-family:Italic ;
+	margin:0px 10px;
 }

@@ -10,6 +10,6 @@ app.get("/",function(req,res){
 	res.render("index");
 });
 
-app.listen(process.env.PORT,function(req,res){
+app.listen(3000,function(req,res){
 	console.log("began listening");
 });

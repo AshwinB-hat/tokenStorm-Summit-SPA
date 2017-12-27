@@ -3,7 +3,9 @@ var app = express();
 var ejs = require("ejs");
 var path = require("path")
 
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public/style')));
+app.use(express.static(path.join(__dirname, 'public/images')));
+app.use(express.static(path.join(__dirname, 'public/js')));
 app.set("view engine", "ejs");
 
 app.get("/",function(req,res){

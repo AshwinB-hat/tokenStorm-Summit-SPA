@@ -7,7 +7,8 @@ body {
 
 .topDisplay{
 	height:100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+	min-height:105vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
 	url("Arifa.JPG");
 	
 	background-attachment: fixed;
@@ -17,7 +18,9 @@ body {
 	
 	}
 
-
+.nav_top{
+	visibility: hidden;
+}
 img{
 	margin-top:10px;
 	height:90px;
@@ -103,8 +106,8 @@ ul{
 }
 
 .vertical-center {
-  height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
@@ -142,8 +145,11 @@ h1{
 
 .nav-link{
 	font-size:30px;
-	font-family:Ubuntu;
+	font-family:Sofia;
 	margin:0px 10px;
+}
+.nav-link:hover{
+	color:red;
 }
 
 .dropdown p {
@@ -161,11 +167,11 @@ h1{
 .dropbtn{
 	margin-left:50px;
 	background-color:Transparent;
-	border: rgba( 177, 9, 0, 0.6);
+	border: rgba( 255, 255, 255, 0.6);
 	font-size: 30px;
 	margin-bottom: 10px;
 	font-weight: bold;
-	color:rgba( 177, 9, 0, 0.6);
+	color:rgba( 255, 255, 255, 0.6);
 }
 .show{
 	display: block;
@@ -198,4 +204,49 @@ h1{
 #speak{
 	
 	
+}
+
+#third{
+	height:50%;
+	
+}
+
+.social{
+	margin-left:40%;
+	
+
+}
+
+#social_media{
+	margin:0px 1%;
+	font-size:35px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 70%;
+  
+}
+.fa:hover{
+	opacity:0.8;
+	color:red;
+
+}
+button{
+	font-family: Impact;
+	cursor:pointer;
+}
+
+button:focus{
+	outline:none;
+}
+
+
+button:active{
+	outline:none;
 }

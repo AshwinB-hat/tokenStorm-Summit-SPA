@@ -1,13 +1,20 @@
 (function($) {          
     $(document).ready(function(){ 
 
+         
+
+
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 400) {
                 $('nav').addClass("nav_background");
+                $('#nav_top').removeClass("nav_top")
             } else {
                 $('nav').removeClass("nav_background");
+                $('#nav_top').addClass("nav_top")
             }
         });
+
+
 
         // Add smooth scrolling to all links
      $("a").on('click', function(event) {
@@ -30,14 +37,15 @@
                 window.location.hash = hash;
               });
             } // End if
-  });
-
-  $("#brochure").on('click','[data-toggle="lightbox"]',function(event){
-      event.preventDefault();
-      $(this).ekkoLightbox();
-  })
+              });
 
 
+
+  $('.fancybox').fancybox({
+    beforeShow : function(){
+    this.title =  $(this.element).data("caption");
+    }
+    });
 
     });
 })(jQuery);
@@ -59,6 +67,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
 
 
 

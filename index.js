@@ -6,6 +6,7 @@ var path = require("path")
 app.use(express.static(path.join(__dirname, 'public/style')));
 app.use(express.static(path.join(__dirname, 'public/images')));
 app.use(express.static(path.join(__dirname, 'public/js')));
+app.use(express.static(path.join(__dirname, 'public/docs')));
 app.set("view engine", "ejs");
 
 app.get("/",function(req,res){

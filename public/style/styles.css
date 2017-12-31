@@ -53,9 +53,9 @@ ul{
 	
 	text-align: center;
 	
-	
+	margin-top:40%;
 	font-size:60px;
-	font-family:impact;
+	font-family:Impact;
 	
  	-webkit-text-fill-color: transparent;
  	background: -webkit-linear-gradient(transparent, transparent),
@@ -113,7 +113,7 @@ ul{
   align-items: center;
 }
 
-h1{
+h1, p{
 	text-align:center;
 	padding:20px 0px;
 	color:white;
@@ -169,7 +169,7 @@ h1{
 	background-color:Transparent;
 	border: rgba( 255, 255, 255, 0.6);
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 50%;
 	font-weight: bold;
 	color:rgba( 255, 255, 255, 0.6);
 }
@@ -249,4 +249,22 @@ button:focus{
 
 button:active{
 	outline:none;
+}
+#brochure{
+	height:80%;
+	width:80%;
+	margin: 40% 20% 0% 20%;
+}
+
+.check{
+	background-color:red;
+}
+
+#press{
+	height:100%;
+	width:50%;
+	margin-left:20%;
+}
+#hack{
+	margin-top:20%;
 }

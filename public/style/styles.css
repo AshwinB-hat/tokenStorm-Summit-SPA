@@ -59,7 +59,7 @@ ul{
 	
  	-webkit-text-fill-color: transparent;
  	background: -webkit-linear-gradient(transparent, transparent),
-             url(http://cloud-3.steamusercontent.com/ugc/81469728911596489/F6610EC5FEDED82ECF056B7B796162F02C340445/) repeat;
+             url("lightning.gif") repeat;
  	background: -o-linear-gradient(transparent, transparent);
  	-webkit-background-clip: text;
 	
